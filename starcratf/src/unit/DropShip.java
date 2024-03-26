@@ -7,12 +7,15 @@ import model.Repairable;
 public class DropShip extends AirUnit implements Damageable, Repairable {
 
 	public DropShip(String name, int hp) {
-		super(name, hp);
+		super("dropship", 80);
 	}
 
 	@Override
 	public void damage(int n) {
-		
+		while (n > 0) {
+			setHpMinas();
+			n--;
+		}
 	}
 
 	@Override
