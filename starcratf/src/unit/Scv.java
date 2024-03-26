@@ -1,6 +1,6 @@
 package unit;
 
-import controller.GroundUnit;
+import controller.*;
 import model.Damageable;
 import model.Repairable;
 
@@ -15,6 +15,17 @@ class Scv extends GroundUnit implements Damageable, Repairable {
 		while (n > 0) {
 			setHpMinas();
 			n--;
+		}
+	}
+
+	public void repair(Unit unit) {
+		if (!unit.isRepairable()) {
+			System.out.println("repair fail");
+			return;
+		}
+		if (!unit.isDead()) {
+			unit.setHpPlus();
+			System.out.println("repair success");
 		}
 	}
 
