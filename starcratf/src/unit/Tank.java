@@ -6,7 +6,7 @@ import model.Repairable;
 
 public class Tank extends GroundUnit implements Repairable, Damageable {
 
-	public Tank(String name, int hp) {
+	public Tank() {
 		super("tank", 100);
 	}
 

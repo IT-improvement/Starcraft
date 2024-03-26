@@ -6,7 +6,7 @@ import model.Repairable;
 
 public class DropShip extends AirUnit implements Damageable, Repairable {
 
-	public DropShip(String name, int hp) {
+	public DropShip() {
 		super("dropship", 80);
 	}
 

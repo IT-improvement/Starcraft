@@ -5,7 +5,7 @@ import model.Damageable;
 
 public class Marine extends GroundUnit implements Damageable {
 
-	public Marine(String name, int hp) {
+	public Marine() {
 		super("marine", 50);
 	}
 

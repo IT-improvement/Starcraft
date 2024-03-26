@@ -6,7 +6,7 @@ import model.Repairable;
 
 public class Scv extends GroundUnit implements Damageable, Repairable {
 
-	public Scv(String name, int hp) {
+	public Scv() {
 		super("scv", 20);
 	}
 
