@@ -16,7 +16,8 @@ public class DropShip extends AirUnit implements Damageable, Repairable {
 			setHpMinas();
 			n--;
 		}
-		System.out.println("Attacked" + this);
+		System.err.println("Attacked!! ");
+		System.out.println(this);
 	}
 
 	@Override
