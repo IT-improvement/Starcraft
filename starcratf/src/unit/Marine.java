@@ -3,7 +3,7 @@ package unit;
 import controller.GroundUnit;
 import model.Damageable;
 
-class Marine extends GroundUnit implements Damageable {
+public class Marine extends GroundUnit implements Damageable {
 
 	public Marine(String name, int hp) {
 		super("marine", 50);

@@ -4,7 +4,7 @@ import controller.GroundUnit;
 import model.Damageable;
 import model.Repairable;
 
-class Tank extends GroundUnit implements Repairable, Damageable {
+public class Tank extends GroundUnit implements Repairable, Damageable {
 
 	public Tank(String name, int hp) {
 		super("tank", 100);

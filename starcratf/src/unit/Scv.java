@@ -4,7 +4,7 @@ import controller.*;
 import model.Damageable;
 import model.Repairable;
 
-class Scv extends GroundUnit implements Damageable, Repairable {
+public class Scv extends GroundUnit implements Damageable, Repairable {
 
 	public Scv(String name, int hp) {
 		super("scv", 20);
