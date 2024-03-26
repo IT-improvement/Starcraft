@@ -12,7 +12,7 @@ public class DropShip extends AirUnit implements Damageable, Repairable {
 
 	@Override
 	public void damage(int n) {
-
+		
 	}
 
 	@Override

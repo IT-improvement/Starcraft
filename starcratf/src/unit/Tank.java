@@ -12,7 +12,10 @@ class Tank extends GroundUnit implements Repairable, Damageable {
 
 	@Override
 	public void damage(int n) {
-		
+		while (n > 0) {
+			setHpMinas();
+			n--;
+		}
 	}
 
 }

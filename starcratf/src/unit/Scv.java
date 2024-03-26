@@ -12,7 +12,10 @@ class Scv extends GroundUnit implements Damageable, Repairable {
 
 	@Override
 	public void damage(int n) {
-
+		while (n > 0) {
+			setHpMinas();
+			n--;
+		}
 	}
 
 }
