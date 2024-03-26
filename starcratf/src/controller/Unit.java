@@ -24,8 +24,9 @@ abstract class Unit {
 	}
 
 	public void setHpMinas() {
-		hp = 0;
-		isDead = true;
+		hp--;
+		if (hp == 0)
+			isDead = true;
 	}
 
 }
