@@ -13,6 +13,11 @@ public class Tank extends GroundUnit implements Repairable, Damageable {
 	@Override
 	public void damage(int n) {
 		while (n > 0) {
+			if (this.isDead()) {
+				System.err.println("Dead");
+				System.err.println(this);
+				return;
+			}
 			setHpMinas();
 			n--;
 		}
