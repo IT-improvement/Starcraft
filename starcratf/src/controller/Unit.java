@@ -10,6 +10,7 @@ public abstract class Unit {
 
 	public Unit(String name, int hp) {
 		MAX_HP = hp;
+		this.hp=hp;
 		this.name = name;
 	}
 
