@@ -37,4 +37,9 @@ public abstract class Unit {
 			return true;
 		return false;
 	}
+
+	@Override
+	public String toString() {
+		return String.format("%s: %d/%d", name, hp, MAX_HP);
+	}
 }
