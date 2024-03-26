@@ -1,6 +1,8 @@
 package controller;
 
-abstract class Unit {
+import model.Repairable;
+
+public abstract class Unit {
 	public final int MAX_HP;
 	private int hp;
 	private String name;
@@ -20,7 +22,8 @@ abstract class Unit {
 	}
 
 	public void setHpPlus() {
-		hp = MAX_HP;
+		if (hp < MAX_HP)
+			hp++;
 	}
 
 	public void setHpMinas() {
@@ -29,4 +32,9 @@ abstract class Unit {
 			isDead = true;
 	}
 
+	public boolean isRepairable() {
+		if (this instanceof Repairable)
+			return true;
+		return false;
+	}
 }
