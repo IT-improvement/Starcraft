@@ -15,5 +15,6 @@ public class Marine extends GroundUnit implements Damageable {
 			setHpMinas();
 			n--;
 		}
+		System.out.println("Attacked" + this);
 	}
 }

@@ -16,6 +16,7 @@ public class Tank extends GroundUnit implements Repairable, Damageable {
 			setHpMinas();
 			n--;
 		}
+		System.out.println("Attacked" + this);
 	}
 
 }

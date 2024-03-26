@@ -16,6 +16,7 @@ public class Scv extends GroundUnit implements Damageable, Repairable {
 			setHpMinas();
 			n--;
 		}
+		System.out.println("Attacked" + this);
 	}
 
 	public void repair(Unit unit) {
