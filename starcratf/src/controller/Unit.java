@@ -31,6 +31,9 @@ public abstract class Unit {
 		hp--;
 		if (hp == 0)
 			isDead = true;
+		if(isDead) {
+			
+		}
 	}
 
 	public boolean isRepairable() {
